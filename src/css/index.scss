@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 99vh;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .player,
+    .cpu {
+      width: 450px;
+      height: 200px;
+      background-color: lightblue;
+      display: flex;
+      padding: 3px;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .player-row,
+      .cpu-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 55px;
+        background-color: red;
+
+        div {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          font-size: 30px;
+        }
+
+        .bingo {
+          color: white;
+          background-color: red;
+        }
+
+        .blank {
+          background-color: lightblue;
+          border: 1px solid black;
+        }
+      }
+    }
+
+    .dice {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      text-align: center;
+      background-color: aqua;
+    }
+  }
+
+  button {
+    align-self: center;
+    margin-top: 50px;
+  }
+}
